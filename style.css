@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    height: 120vh;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000000fd;
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.formulario {
+    width: 30vw;
+    border-radius: 5px;
+    padding: 5%;
+    background-color: #2e2c2c67;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formulario > h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 95%;
+    font-size: 1.2rem;
+
+}
+
+fieldset > input{
+    color: #ad7474;
+    width: 99%;
+    padding: 1%;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+fieldset > input:where(:read-only) {
+    cursor: not-allowed;
+    color: #afafaf;
+    width: 99%;
+    padding: 1%;
+    font-size: 1.2rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
